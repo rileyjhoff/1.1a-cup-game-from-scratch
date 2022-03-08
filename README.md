@@ -25,7 +25,7 @@ Additional considerations:
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
 
 ## Plan
-
+![wireframes of app](assets/wireframes.png)
 
 
 | User should be able to . . .                                                         |             |
