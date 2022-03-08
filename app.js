@@ -89,3 +89,7 @@ rightButton.addEventListener('click', () => {
     let correctSpot = getRandomItem(hidingPlaces);
     handleGuess('right', correctSpot);
 });
+
+resetButton.addEventListener('click', () => {
+    console.log('reset button works');
+});
