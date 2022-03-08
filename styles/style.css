@@ -113,6 +113,7 @@ footer {
     content: 'Winner!';
     position: absolute;
     color: green;
+    transform: translateY(-20px);
 }
 
 .nope::after {
@@ -127,6 +128,7 @@ footer {
     content: 'Over here!';
     position: absolute;
     color: orange;
+    transform: translateY(-20px);
 }
 
 .hidden {
