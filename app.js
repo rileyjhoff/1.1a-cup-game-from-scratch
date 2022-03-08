@@ -56,6 +56,9 @@ function resetStyles() {
     leftTryButton.classList.add('hidden');
     centerTryButton.classList.add('hidden');
     rightTryButton.classList.add('hidden');
+    leftButton.disabled = false;
+    centerButton.disabled = false;
+    rightButton.disabled = false;
 }
 
 function handleGuess(userGuess, correctSpot) {
@@ -85,12 +88,6 @@ function disableButtons(userGuess) {
     document.getElementById(`${userGuess}-try`).classList.remove('hidden');
 }
 
-function tryAgain() {
-    leftButton.disabled = false;
-    centerButton.disabled = false;
-    rightButton.disabled = false;
-}
-
 // set event listeners 
   // get user input
   // use user input to update state 
@@ -118,17 +115,14 @@ rightButton.addEventListener('click', () => {
 });
 
 leftTryButton.addEventListener('click', () => {
-    tryAgain();
     resetStyles();
 });
 
 centerTryButton.addEventListener('click', () => {
-    tryAgain();
     resetStyles();
 });
 
 rightTryButton.addEventListener('click', () => {
-    tryAgain();
     resetStyles();
 });
 
