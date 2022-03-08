@@ -112,16 +112,19 @@ footer {
     font-size: 1em;
     content: 'Winner!';
     position: absolute;
+    color: green;
 }
 
 .nope::after {
     font-size: 1em;
     content: 'Try again :(';
     position: absolute;
+    color: red;
 }
 
 .over-here::after {
     font-size: 1em;
     content: 'Over here!';
     position: absolute;
+    color: orange;
 }

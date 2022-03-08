@@ -9,7 +9,7 @@ const rightButton = document.getElementById('right-button');
 
 const leftCupImg = document.getElementById('left-cup');
 const centerCupImg = document.getElementById('center-cup');
-const righttCupImg = document.getElementById('right-cup');
+const rightCupImg = document.getElementById('right-cup');
 
 const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
@@ -42,6 +42,9 @@ function resetStyles() {
     leftContainer.classList.remove('bingo', 'over-here', 'nope');
     centerContainer.classList.remove('bingo', 'over-here', 'nope');
     rightContainer.classList.remove('bingo', 'over-here', 'nope');
+    leftCupImg.src = 'assets/cup.png';
+    centerCupImg.src = 'assets/cup.png';
+    rightCupImg.src = 'assets/cup.png';
 }
 
 function handleGuess(userGuess, correctSpot) {
