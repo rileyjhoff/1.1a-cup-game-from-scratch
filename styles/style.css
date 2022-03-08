@@ -97,5 +97,25 @@ footer {
 
 .main-section div{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-flow: column;
+}
+
+.cup-img {
+    height: 216px;
+    width: 162px;
+    margin: 10px;
+}
+
+.bingo::after {
+    font-size: 1em;
+    content: 'Winner!';
+    position: absolute;
+}
+
+.nope::after {
+    font-size: 1em;
+    content: 'Try again :(';
+    position: absolute;
 }

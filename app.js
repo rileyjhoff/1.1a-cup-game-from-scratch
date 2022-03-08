@@ -32,7 +32,7 @@ function getRandomItem(arr) {
     const index = Math.floor(Math.random() * arr.length);
     return arr[index];
 }
-console.log(getRandomItem(hidingPlaces));
+// console.log(getRandomItem(hidingPlaces));
 
 
 // set event listeners 
