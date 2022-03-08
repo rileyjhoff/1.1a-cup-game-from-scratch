@@ -19,15 +19,21 @@ const totalEl = document.getElementById('total');
 let total = 0;
 let wins = 0;
 
-
-// functions
 const hidingPlaces = [
     'left',
     'center',
     'right'
 ];
+// console.log(hidingPlaces);
 
-console.log(hidingPlaces);
+// functions
+
+function getRandomItem(arr) {
+    const index = Math.floor(Math.random() * arr.length);
+    return arr[index];
+}
+console.log(getRandomItem(hidingPlaces));
+
 
 // set event listeners 
   // get user input
