@@ -61,3 +61,15 @@ function handleGuess(userGuess, correctSpot) {
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+
+leftButton.addEventListener('click', () => {
+    // console.log('left button works');
+});
+
+centerButton.addEventListener('click', () => {
+    // console.log('center button works');
+});
+
+rightButton.addEventListener('click', () => {
+    // console.log('right button works');
+});
