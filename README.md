@@ -37,6 +37,16 @@ Additional considerations:
   - section with three "destination" elements
     - why? to display the state
     - how? destinationEl.textContent = wins || losses || total
+- Events
+  - User guesses by clicking one of the three buttons
+    - State changes
+      - total++
+      - if correct guess, wins++
+      - losses is derived: losses = total - wins
+    - DOM updates
+      - show where the ball is by changing img of correct container
+      - show the new state in the elements that track wins, losses, and total
+
 
 | User should be able to . . .                                                         |             |
 | :----------------------------------------------------------------------------------- | ----------: |
