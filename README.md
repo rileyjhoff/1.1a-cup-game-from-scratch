@@ -46,7 +46,23 @@ Additional considerations:
     - DOM updates
       - show where the ball is by changing img of correct container
       - show the new state in the elements that track wins, losses, and total
-
+- Order
+  - add HTML elements to index.html
+    - include necessary class and ID tags
+    - validate by looking at live server
+  - add styling so that the images, button, and state container appear where i want them on the page
+    - validate by looking at live server
+  - get DOM elements in app.js
+    - all image and button containers
+    - the "destination" elements for state
+    - validate by console.log(DOM elements)
+  - initialize state
+  - write functions
+    - validate with console.log within functions
+    - validate by calling functions
+  - write event listeners
+    - validate with console.log and by clicking buttons
+  - adjust styling as needed
 
 | User should be able to . . .                                                         |             |
 | :----------------------------------------------------------------------------------- | ----------: |
