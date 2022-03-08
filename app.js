@@ -15,6 +15,9 @@ const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
 const totalEl = document.getElementById('total');
 
+const resetButton = document.getElementById('reset');
+
+// console.log(resetButton);\
 // console.log(leftContainer, centerContainer, rightContainer);
 // console.log(leftButton, centerButton, rightButton);
 // console.log(winsEl, lossesEl, totalEl);
