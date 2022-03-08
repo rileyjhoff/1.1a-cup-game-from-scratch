@@ -91,5 +91,10 @@ rightButton.addEventListener('click', () => {
 });
 
 resetButton.addEventListener('click', () => {
-    console.log('reset button works');
+    resetStyles();
+    total = 0;
+    wins = 0;
+    winsEl.textContent = wins;
+    totalEl.textContent = total;
+    lossesEl.textContent = total - wins;
 });
