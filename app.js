@@ -11,11 +11,23 @@ const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
 const totalEl = document.getElementById('total');
 
-console.log(leftContainer, centerContainer, rightContainer);
-console.log(leftButton, centerButton, rightButton);
-console.log(winsEl, lossesEl, totalEl);
+// console.log(leftContainer, centerContainer, rightContainer);
+// console.log(leftButton, centerButton, rightButton);
+// console.log(winsEl, lossesEl, totalEl);
 
 // let state
+let total = 0;
+let wins = 0;
+
+
+// functions
+const hidingPlaces = [
+    'left',
+    'center',
+    'right'
+];
+
+console.log(hidingPlaces);
 
 // set event listeners 
   // get user input
