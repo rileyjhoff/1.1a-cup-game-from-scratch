@@ -53,6 +53,9 @@ function resetStyles() {
     leftCupImg.src = 'assets/cup.png';
     centerCupImg.src = 'assets/cup.png';
     rightCupImg.src = 'assets/cup.png';
+    leftTryButton.classList.add('hidden');
+    centerTryButton.classList.add('hidden');
+    rightTryButton.classList.add('hidden');
 }
 
 function handleGuess(userGuess, correctSpot) {
@@ -115,15 +118,18 @@ rightButton.addEventListener('click', () => {
 });
 
 leftTryButton.addEventListener('click', () => {
-    console.log('button working');
+    tryAgain();
+    resetStyles();
 });
 
 centerTryButton.addEventListener('click', () => {
-  console.log('button working');
+    tryAgain();
+    resetStyles();
 });
 
 rightTryButton.addEventListener('click', () => {
-  console.log('button working');
+    tryAgain();
+    resetStyles();
 });
 
 resetButton.addEventListener('click', () => {
