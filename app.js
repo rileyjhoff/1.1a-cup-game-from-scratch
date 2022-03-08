@@ -40,6 +40,23 @@ function resetStyles() {
     rightContainer.classList.remove('bingo', 'nope');
 }
 
+function handleGuess(userGuess, correctSpot) {
+    resetStyles();
+    total++;
+    if (userGuess === correctSpot) {
+        const correctContainer = document.getElementById(`${correctSpot}-cup-container`);
+        correctContainer.classList.add('bingo');
+        wins++;
+    }
+    if (userGuess !== correctSpot) {
+        const guessContainer = document.getElementById(`${userGuess}-cup-container`);
+        guessContainer.classList.add('nope');
+    }
+    winsEl.textContent = wins;
+    totalEl.textContent = total;
+    lossesEl.textContent = total - wins;
+}
+
 // set event listeners 
   // get user input
   // use user input to update state 
