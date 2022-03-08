@@ -119,3 +119,9 @@ footer {
     content: 'Try again :(';
     position: absolute;
 }
+
+.over-here::after {
+    font-size: 1em;
+    content: 'Over here!';
+    position: absolute;
+}

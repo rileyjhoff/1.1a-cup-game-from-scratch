@@ -35,9 +35,9 @@ function getRandomItem(arr) {
 // console.log(getRandomItem(hidingPlaces));
 
 function resetStyles() {
-    leftContainer.classList.remove('bingo', 'nope');
-    centerContainer.classList.remove('bingo', 'nope');
-    rightContainer.classList.remove('bingo', 'nope');
+    leftContainer.classList.remove('bingo', 'over-here', 'nope');
+    centerContainer.classList.remove('bingo', 'over-here', 'nope');
+    rightContainer.classList.remove('bingo', 'over-here', 'nope');
 }
 
 function handleGuess(userGuess, correctSpot) {
@@ -49,7 +49,8 @@ function handleGuess(userGuess, correctSpot) {
         wins++;
     }
     if (userGuess !== correctSpot) {
-        const guessContainer = document.getElementById(`${userGuess}-cup-container`);
+        const correctContainer = document.getElementById(`${correctSpot}-cup-container`);
+        correctContainer.classList.add('over-here');const guessContainer = document.getElementById(`${userGuess}-cup-container`);
         guessContainer.classList.add('nope');
     }
     winsEl.textContent = wins;
@@ -63,13 +64,16 @@ function handleGuess(userGuess, correctSpot) {
   // update DOM to reflect the new state
 
 leftButton.addEventListener('click', () => {
-    // console.log('left button works');
+    let correctSpot = getRandomItem(hidingPlaces);
+    handleGuess('left', correctSpot);
 });
 
 centerButton.addEventListener('click', () => {
-    // console.log('center button works');
+    let correctSpot = getRandomItem(hidingPlaces);
+    handleGuess('center', correctSpot);
 });
 
 rightButton.addEventListener('click', () => {
-    // console.log('right button works');
+    let correctSpot = getRandomItem(hidingPlaces);
+    handleGuess('right', correctSpot);
 });
