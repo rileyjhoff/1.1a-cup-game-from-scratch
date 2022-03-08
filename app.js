@@ -7,6 +7,10 @@ const leftButton = document.getElementById('left-button');
 const centerButton = document.getElementById('center-button');
 const rightButton = document.getElementById('right-button');
 
+const leftCupImg = document.getElementById('left-cup');
+const centerCupImg = document.getElementById('center-cup');
+const righttCupImg = document.getElementById('right-cup');
+
 const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
 const totalEl = document.getElementById('total');
