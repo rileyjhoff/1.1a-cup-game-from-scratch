@@ -82,6 +82,12 @@ function disableButtons(userGuess) {
     document.getElementById(`${userGuess}-try`).classList.remove('hidden');
 }
 
+function tryAgain() {
+    leftButton.disabled = false;
+    centerButton.disabled = false;
+    rightButton.disabled = false;
+}
+
 // set event listeners 
   // get user input
   // use user input to update state 
@@ -106,6 +112,18 @@ rightButton.addEventListener('click', () => {
     let correctSpot = getRandomItem(hidingPlaces);
     handleGuess(userGuess, correctSpot);
     disableButtons(userGuess);
+});
+
+leftTryButton.addEventListener('click', () => {
+    console.log('button working');
+});
+
+centerTryButton.addEventListener('click', () => {
+  console.log('button working');
+});
+
+rightTryButton.addEventListener('click', () => {
+  console.log('button working');
 });
 
 resetButton.addEventListener('click', () => {
