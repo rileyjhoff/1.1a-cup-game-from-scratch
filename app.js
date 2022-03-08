@@ -21,7 +21,7 @@ const totalEl = document.getElementById('total');
 
 const resetButton = document.getElementById('reset');
 
-console.log(leftTryButton, centerTryButton, rightTryButton);
+// console.log(leftTryButton, centerTryButton, rightTryButton);
 // console.log(resetButton);\
 // console.log(leftContainer, centerContainer, rightContainer);
 // console.log(leftButton, centerButton, rightButton);
@@ -75,24 +75,37 @@ function handleGuess(userGuess, correctSpot) {
     lossesEl.textContent = total - wins;
 }
 
+function disableButtons(userGuess) {
+    leftButton.disabled = true;
+    centerButton.disabled = true;
+    rightButton.disabled = true;
+    document.getElementById(`${userGuess}-try`).classList.remove('hidden');
+}
+
 // set event listeners 
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
 
 leftButton.addEventListener('click', () => {
+    let userGuess = 'left';
     let correctSpot = getRandomItem(hidingPlaces);
-    handleGuess('left', correctSpot);
+    handleGuess(userGuess, correctSpot);
+    disableButtons(userGuess);
 });
 
 centerButton.addEventListener('click', () => {
+    let userGuess = 'center';
     let correctSpot = getRandomItem(hidingPlaces);
-    handleGuess('center', correctSpot);
+    handleGuess(userGuess, correctSpot);
+    disableButtons(userGuess);
 });
 
 rightButton.addEventListener('click', () => {
+    let userGuess = 'right';
     let correctSpot = getRandomItem(hidingPlaces);
-    handleGuess('right', correctSpot);
+    handleGuess(userGuess, correctSpot);
+    disableButtons(userGuess);
 });
 
 resetButton.addEventListener('click', () => {
