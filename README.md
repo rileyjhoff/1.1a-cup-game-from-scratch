@@ -27,6 +27,16 @@ Additional considerations:
 ## Plan
 ![wireframes of app](assets/wireframes.png)
 
+- HTML Elements
+  - three images
+    - why? need three cups and one image to update per click to show the correct guess
+    - how? cupImg.src = 'cup-with-ball.png'
+  - three buttons
+    - why? to let the user make a guess
+    - how? button.addEventListener('click', () => {})
+  - section with three "destination" elements
+    - why? to display the state
+    - how? destinationEl.textContent = wins || losses || total
 
 | User should be able to . . .                                                         |             |
 | :----------------------------------------------------------------------------------- | ----------: |
