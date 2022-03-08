@@ -3,13 +3,17 @@ const leftContainer = document.getElementById('left-cup-container');
 const centerContainer = document.getElementById('center-cup-container');
 const rightContainer = document.getElementById('right-cup-container');
 
+const leftCupImg = document.getElementById('left-cup');
+const centerCupImg = document.getElementById('center-cup');
+const rightCupImg = document.getElementById('right-cup');
+
 const leftButton = document.getElementById('left-button');
 const centerButton = document.getElementById('center-button');
 const rightButton = document.getElementById('right-button');
 
-const leftCupImg = document.getElementById('left-cup');
-const centerCupImg = document.getElementById('center-cup');
-const rightCupImg = document.getElementById('right-cup');
+const leftTryButton = document.getElementById('left-try');
+const centerTryButton = document.getElementById('center-try');
+const rightTryButton = document.getElementById('right-try');
 
 const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
@@ -17,6 +21,7 @@ const totalEl = document.getElementById('total');
 
 const resetButton = document.getElementById('reset');
 
+console.log(leftTryButton, centerTryButton, rightTryButton);
 // console.log(resetButton);\
 // console.log(leftContainer, centerContainer, rightContainer);
 // console.log(leftButton, centerButton, rightButton);
