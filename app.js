@@ -34,6 +34,11 @@ function getRandomItem(arr) {
 }
 // console.log(getRandomItem(hidingPlaces));
 
+function resetStyles() {
+    leftContainer.classList.remove('bingo', 'nope');
+    centerContainer.classList.remove('bingo', 'nope');
+    rightContainer.classList.remove('bingo', 'nope');
+}
 
 // set event listeners 
   // get user input
