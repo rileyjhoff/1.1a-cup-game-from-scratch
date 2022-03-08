@@ -42,6 +42,8 @@ function resetStyles() {
 
 function handleGuess(userGuess, correctSpot) {
     resetStyles();
+    const changeImg = document.getElementById(`${correctSpot}-cup`);
+    changeImg.src = 'assets/cup-with-ball.png';
     total++;
     if (userGuess === correctSpot) {
         const correctContainer = document.getElementById(`${correctSpot}-cup-container`);
