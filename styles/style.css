@@ -135,3 +135,7 @@ footer {
 .hidden {
     visibility: hidden;
 }
+
+#reset {
+    transform: translate(30px);
+}
