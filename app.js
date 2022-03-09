@@ -1,4 +1,4 @@
-// import functions and grab DOM elements
+// DOM elements
 const leftContainer = document.getElementById('left-cup-container');
 const centerContainer = document.getElementById('center-cup-container');
 const rightContainer = document.getElementById('right-cup-container');
@@ -21,7 +21,7 @@ const totalEl = document.getElementById('total');
 
 const resetButton = document.getElementById('reset');
 
-// let state
+// state
 let total = 0;
 let wins = 0;
 
@@ -54,16 +54,15 @@ function resetStyles() {
 
 function handleGuess(userGuess, correctSpot) {
     resetStyles();
+    const correctContainer = document.getElementById(`${correctSpot}-cup-container`);
     const changeImg = document.getElementById(`${correctSpot}-cup`);
     changeImg.src = 'assets/cup-with-ball.png';
     total++;
     if (userGuess === correctSpot) {
-        const correctContainer = document.getElementById(`${correctSpot}-cup-container`);
         correctContainer.classList.add('bingo');
         wins++;
     }
     if (userGuess !== correctSpot) {
-        const correctContainer = document.getElementById(`${correctSpot}-cup-container`);
         correctContainer.classList.add('over-here');const guessContainer = document.getElementById(`${userGuess}-cup-container`);
         guessContainer.classList.add('nope');
     }
@@ -79,11 +78,7 @@ function disableButtons(userGuess) {
     document.getElementById(`${userGuess}-try`).classList.remove('hidden');
 }
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
-
+// event listeners 
 leftButton.addEventListener('click', () => {
     let userGuess = 'left';
     let correctSpot = getRandomItem(hidingPlaces);
