@@ -121,7 +121,6 @@ footer {
     content: 'Try again :(';
     position: absolute;
     color: red;
-    transform: translateY(20px);
 }
 
 .over-here::after {
