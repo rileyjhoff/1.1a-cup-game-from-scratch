@@ -21,12 +21,6 @@ const totalEl = document.getElementById('total');
 
 const resetButton = document.getElementById('reset');
 
-// console.log(leftTryButton, centerTryButton, rightTryButton);
-// console.log(resetButton);\
-// console.log(leftContainer, centerContainer, rightContainer);
-// console.log(leftButton, centerButton, rightButton);
-// console.log(winsEl, lossesEl, totalEl);
-
 // let state
 let total = 0;
 let wins = 0;
@@ -36,15 +30,12 @@ const hidingPlaces = [
     'center',
     'right'
 ];
-// console.log(hidingPlaces);
 
 // functions
-
 function getRandomItem(arr) {
     const index = Math.floor(Math.random() * arr.length);
     return arr[index];
 }
-// console.log(getRandomItem(hidingPlaces));
 
 function resetStyles() {
     leftContainer.classList.remove('bingo', 'over-here', 'nope');
